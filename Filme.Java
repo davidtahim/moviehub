@@ -3,7 +3,7 @@ public class Filme {
     //declarando os atributos da classe
     String nome;
     int anoDeLancamento, totalEmMinutos, totalDeAvaliacoes;
-    double somaDasAvaliacoes,nota;
+    double somaDasAvaliacoes,nota, pegaMedia;
 
     //criando as ações da classe
 
@@ -20,7 +20,13 @@ public class Filme {
 
     }
 
-    
+    pegaMedia(){
+
+        return somaDasAvaliacoes / totalDeAvaliacoes;
+
+    }
+
+
 
 
 
