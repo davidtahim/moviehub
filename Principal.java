@@ -8,7 +8,7 @@ public class Principal {
         filme1.exibeFichaTecnica();
         //Lançando as avaliações do filme
         filme1.avalia(8);
-        filme1.avalia(5);
+        filme1.avalia(9.5);
         filme1.avalia(10);
 
         //Exibindo as avaliacoes do filme
