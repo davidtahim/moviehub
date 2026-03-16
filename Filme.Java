@@ -3,7 +3,7 @@ public class Filme {
     //declarando os atributos da classe
     String nome;
     int anoDeLancamento, totalEmMinutos, totalDeAvaliacoes;
-    double somaDasAvaliacoes;
+    double somaDasAvaliacoes,nota;
 
     //criando as ações da classe
 
@@ -12,6 +12,15 @@ public class Filme {
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("Duração em minutos: " + totalEmMinutos);
     }
+
+    void avalia(nota){
+
+        somaDasAvaliacoes += nota;
+        totalDeAvaliacoes++;
+
+    }
+
+    
 
 
 
