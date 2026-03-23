@@ -1,3 +1,4 @@
+package br.com.cdl.moviehub.modelos;
 public class Principal {
     public static void main(String[] args) {
         Filme filme1 = new Filme();
@@ -17,4 +18,5 @@ public class Principal {
         System.out.println("Total de avaliações: " + filme1.totalDeAvaliacoes);
         System.out.println("Média das avaliações: " + filme1.pegaMedia());
     }
+
 }

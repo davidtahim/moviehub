@@ -1,26 +1,28 @@
+package br.com.cdl.moviehub.modelos;
 public class Filme {
     
     //declarando os atributos da classe
-    String nome;
-    int anoDeLancamento, totalEmMinutos, totalDeAvaliacoes;
-    double somaDasAvaliacoes,nota, pegaMedia;
+    private String nome;
+    private int anoDeLancamento, totalEmMinutos, totalDeAvaliacoes;
+    private double somaDasAvaliacoes,nota, pegaMedia;
+    private boolean incluidoNoPlano;
 
     //criando as ações da classe
 
-    void exibeFichaTecnica(){
+    public void exibeFichaTecnica(){
         System.out.println("Nome do filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
         System.out.println("Duração em minutos: " + totalEmMinutos);
     }
 
-    void avalia(double nota){
+    public void avalia(double nota){
 
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
 
     }
 
-    double pegaMedia(){
+    public double pegaMedia(){
 
         return somaDasAvaliacoes / totalDeAvaliacoes;
 
