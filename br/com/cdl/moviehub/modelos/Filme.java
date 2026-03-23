@@ -1,3 +1,5 @@
+package br.com.cdl.moviehub.modelos;
+
 public class Filme {
     
     //declarando os atributos da classe
