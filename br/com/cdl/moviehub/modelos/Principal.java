@@ -2,9 +2,9 @@ package br.com.cdl.moviehub.modelos;
 public class Principal {
     public static void main(String[] args) {
         Filme filme1 = new Filme();
-            filme1.nome = "O Poderoso Chefão";
-            filme1.anoDeLancamento = 1972;
-            filme1.totalEmMinutos = 175;
+            filme1.setNome("O Poderoso Chefão");
+            filme1.setAnoDeLancamento(1972);
+            filme1.setTotalEmMinutos(175);
 
         filme1.exibeFichaTecnica();
         //Lançando as avaliações do filme
@@ -14,8 +14,8 @@ public class Principal {
 
         //Exibindo as avaliacoes do filme
 
-        System.out.println("Soma das avaliações: " + filme1.somaDasAvaliacoes);
-        System.out.println("Total de avaliações: " + filme1.totalDeAvaliacoes);
+        System.out.println("Soma das avaliações: " + filme1.getSomaDasAvaliacoes());
+        System.out.println("Total de avaliações: " + filme1.getTotalDeAvaliacoes());
         System.out.println("Média das avaliações: " + filme1.pegaMedia());
     }
 
