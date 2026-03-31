@@ -1,5 +1,7 @@
-package br.com.cdl.moviehub.modelos;
 import java.util.Scanner;
+
+import br.com.cdl.moviehub.modelos.Filme;
+import br.com.cdl.moviehub.modelos.Serie;
 public class Principal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
