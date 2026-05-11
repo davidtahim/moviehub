@@ -14,28 +14,27 @@ public class Principal {
         System.out.println("Digite o nome do diretor do filme:");
         filme1.setDiretor(scanner.nextLine());
         System.out.println("Digite o ano de lançamento do filme:");
-        filme1.setAnoDeLancamento(scanner.nextInt());
+        filme1.setAnoDeLancamento(Integer.parseInt(scanner.nextLine().trim()));
         System.out.println("Digite a duração do filme em minutos:");
-        filme1.setTotalEmMinutos(scanner.nextInt());
+        filme1.setTotalEmMinutos(Integer.parseInt(scanner.nextLine().trim()));
         System.out.println("Digite a quantidade de avaliações:");
-        int qtd= scanner.nextInt();
+        int qtd = Integer.parseInt(scanner.nextLine().trim());
         for (int i=0;i<qtd;i++){
             System.out.println("Digite a nota da avaliação " + (i+1) + ":");
-            filme1.avalia(scanner.nextDouble());
+            filme1.avalia(Double.parseDouble(scanner.nextLine().trim()));
         }
         // Informação das séries
         Serie serie1 = new Serie();
         System.out.println("Digite o nome da série:");
         serie1.setNome(scanner.nextLine());
-        scanner.nextLine(); // Consumir a quebra de linha pendente
         System.out.println("Digite o ano de lançamento da série:");
-        serie1.setAnoDeLancamento(scanner.nextInt());
+        serie1.setAnoDeLancamento(Integer.parseInt(scanner.nextLine().trim()));
         System.out.println("Digite a quantidade de temporadas da série:");
-        serie1.setTemporadas(scanner.nextInt());
+        serie1.setTemporadas(Integer.parseInt(scanner.nextLine().trim()));
         System.out.println("Digite a quantidade de episódios por temporada:");
-        serie1.setEpisodiosPorTemporada(scanner.nextInt());
+        serie1.setEpisodiosPorTemporada(Integer.parseInt(scanner.nextLine().trim()));
         System.out.println("Digite a duração de cada episódio em minutos:");
-        serie1.setMinutosPorEpisodio(scanner.nextInt());
+        serie1.setMinutosPorEpisodio(Integer.parseInt(scanner.nextLine().trim()));
         scanner.close();
         filme1.exibeFichaTecnica();
         serie1.exibeFichaTecnica();

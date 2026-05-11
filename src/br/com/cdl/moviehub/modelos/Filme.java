@@ -10,4 +10,8 @@ public class Filme extends Titulo {
         this.diretor = diretor;
     }
 
+    @Override
+    public int getDuracaoEmMinutos() {
+        return getTotalEmMinutos();
+    }
 }

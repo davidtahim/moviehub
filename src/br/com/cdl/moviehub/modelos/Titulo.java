@@ -104,7 +104,6 @@ public class Titulo {
     }
 
     public int getDuracaoEmMinutos() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getDuracaoEmMinutos'");
+        return totalEmMinutos;
     }
 }
