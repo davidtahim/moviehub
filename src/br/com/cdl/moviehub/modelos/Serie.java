@@ -31,5 +31,8 @@ public class Serie extends Titulo {
         this.ativa = ativa;
     }
    
-   
+    //duração total da série
+    public int getDuracaoEmMinutos() {
+        return temporadas * episodiosPorTemporada * minutosPorEpisodio;     
+    }
 }

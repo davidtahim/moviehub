@@ -102,4 +102,9 @@ public class Titulo {
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {
         this.incluidoNoPlano = incluidoNoPlano;
     }
+
+    public int getDuracaoEmMinutos() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getDuracaoEmMinutos'");
+    }
 }

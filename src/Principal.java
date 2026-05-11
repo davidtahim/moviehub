@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import br.com.cdl.moviehub.calculos.CalculadoraDeTempo;
 import br.com.cdl.moviehub.modelos.Filme;
 import br.com.cdl.moviehub.modelos.Serie;
 
@@ -41,5 +42,13 @@ public class Principal {
         System.out.println("Soma das avaliações: " + filme1.getSomaDasAvaliacoes());
         System.out.println("Total de avaliações: " + filme1.getTotalDeAvaliacoes());
         System.out.println("Média das avaliações: " + filme1.pegaMedia());
-}
+
+        // Calculadora de tempo
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(filme1);
+        calculadora.inclui(serie1);
+        System.out.println("Tempo total: " + calculadora.getTempoTotal());
+
+
+    }
 }
